@@ -148,15 +148,7 @@ function Register() {
                     <button onClick={sendOtp} className="bg-indigo-500 px-5 rounded mt-5 text-white font-semibold text-lg ">SEND OTP</button>
                   </div>
 
-                  <div className="flex-1">
-                    <label htmlFor="password" className="mb-2 inline-block text-xs font-medium uppercase text-gray-700 ">
-                      STUDENT TYPE
-                      <select className="block w-full cursor-text appearance-none rounded-md border border-gray-400 bg--100 py-2 px-3 text-sm outline-none focus:border-indigo-500 focus:bg-white focus:text-gray-600 focus:shadow mt-3" >
-                        <option value="option1">Hosteller</option>
-                        <option value="option2">Dayscholar</option>
-                      </select>
-                    </label>
-                  </div>
+                
 
                   <div className="flex-1">
                     <label htmlFor="password" className="mb-2 inline-block text-xs font-medium uppercase text-gray-700">Phone Number</label>
@@ -306,14 +298,14 @@ function Register() {
                       <button
                         type="button"
                         onClick={() => setRole(Roles.WARDEN)}
-                        className={`rounded-md p-0 my-0  text-white ${role === Roles.WARDEN && "bg-indigo-500 "}`}
+                        className={`rounded-md p-5 my-1  text-white ${role === Roles.WARDEN && "bg-indigo-500 "}`}
                       >
                         Admin
                       </button>
                       <button
                         type="button"
                         onClick={() => setRole(Roles.STUDENT)}
-                        className={`rounded-md  p-10 my-1 transition-all text-black ${role === Roles.STUDENT && "bg-indigo-500 text-white"}`}
+                        className={`rounded-md  p-5 my-1 transition-all text-black ${role === Roles.STUDENT && "bg-indigo-500 text-white"}`}
                       >
                         Student
                       </button>
